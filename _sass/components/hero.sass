@@ -1,0 +1,73 @@
+.hero
+  width: 100%
+  height: 93vh
+
+.mum-image
+  background:
+    image: url('http://i.imgur.com/lcADHwv.png')
+    size: cover
+    position: -15em 0
+  height: 93vh
+
+.quote
+  display: flex
+  height: 79vh
+  width: 100%
+  justify-content: center
+  flex-direction: column
+
+  blockquote
+    max-width: 90%
+    margin: 0 auto
+    font-size: 48px
+    color: $red
+    font-weight: 300
+    line-height: calc(auto+30px)
+
+.quick-nav
+  width: 100%
+  height: 14vh
+  display: flex
+  flex-direction: column
+
+  .nav-links
+    margin: 0 auto
+    width: 90%
+
+    a
+      margin-right: 2em
+      background: $red
+      padding: 0.5em
+      color: white
+      text-decoration: none
+      font-weight: 300
+
+@media (max-width: 414px)
+  .quote-parent
+    flex: 2
+    height: 80vh
+    .quote
+      height: 66vh
+      blockquote
+        font-size: 30px
+  .mum-image
+    flex: 1
+    background:
+      position: 20em -3em
+    height: 13vh
+  .hero-mobile
+    display: flex
+    flex-direction: column
+
+@media (max-width: 320px)
+  .quote-parent
+    height: 80vh
+    .quote
+      height: 66vh
+      blockquote
+        font-size: 24px !important
+
+  .quick-nav
+    a
+      margin-right: 1em
+      font-size: 12px
